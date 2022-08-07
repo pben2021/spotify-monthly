@@ -1,0 +1,226 @@
+body {
+  font-family: 'Helvetica Neue', sans-serif;  
+  color: #ffffff;
+  margin: 0 0 58px;  
+  background-color: rgb(255,173,0);
+  background-image: linear-gradient(#ffae00, #006aff);
+}
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 6em;
+  margin-top: 40px;
+}
+
+h2 {
+  text-align: center;
+  color:white;
+  font-size: 3em;
+  margin: 0;
+  text-shadow: 1px 2px gray;
+
+}
+h3 {
+  text-align: center;
+  color: white;
+  text-shadow: 1px 2px gray
+
+}
+.head{
+  font-size: 6em;
+  text-shadow: 7px 4px black;
+  margin-left: 0px;
+  margin-top: 0px;
+}
+.rank{
+  text-align: left;
+  margin-left: 100px;
+}
+.welc{
+  font-size: 3em;
+  margin-top: 30px;
+  left: 0;
+  position: relative;
+  width: 100%;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-shadow: 2px 2px gray;
+
+}
+
+.instruct{
+  font-size: 1.2em;
+  text-align: center;
+  list-style-position: inside;
+  font-family: 'Helvetica Neue', sans-serif;
+  text-shadow: 1px 2px gray;
+  position: relative;
+  padding: 3px;
+}
+
+.upload {
+  width: 200px;
+  height:100px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: 200px;
+  margin-left: -100px;
+  font-family: 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  
+}
+
+a{
+  opacity: 0.7;
+  color: #ffffff;
+}
+.where{
+  text-align: center;
+	
+}
+a:hover {
+  color: #006aff;
+}
+
+.upload:hover{
+  opacity: 0.7;
+  cursor: pointer;
+  border: 3px dotted blue;
+}
+
+.error{
+  text-align: center;
+  color: white;
+  font-size: 2em;
+  left: 0;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-shadow: 1px 2px gray
+
+}
+.loading {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  left: 0;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+
+  animation: fade 8s infinite 0s;
+}
+
+img {
+  width: 250px;
+  height: 250px;
+}
+.container {
+  max-width: 1000px;
+  margin: 30px auto;
+  overflow: auto;
+  min-height: 300px;
+  padding: 30px;
+}
+.top15 {
+  display:flex;
+  flex-flow: column wrap;
+  position:relative;
+  list-style: none;
+  max-width: 550px;
+  max-height: 1px;
+}
+.bot15 {
+  display:flex;
+  flex-flow: column wrap;
+  position:relative;
+  list-style: none;
+  max-width: 550px;
+  max-height: 1px;
+}
+.wrap {
+  width: 255px;
+  height:255px;
+  position: relative;
+}
+.info{
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:white;
+  position:absolute;
+  max-width: 255px;
+  visibility: hidden;
+  opacity: 0;
+  padding: 10px;
+  transform: translate(0,-150%);
+  transition: opacity .2s, visibility .2s;
+}
+.info .title {
+  font-weight:800;
+  font-size: large;
+  font-family: Tiresias, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.info .artist {
+  font-weight: 100;
+  font-size: medium;
+  font-family: Tiresias, Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-style: italic;
+}
+.wrap:hover .info {
+  visibility: visible;
+  opacity: 1;
+}
+
+li:hover img{
+  width: 255px;
+  height:255px;
+  opacity: 0.15;
+  position: relative;
+}
+
+.pmonth {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+  position:relative;
+
+}
+.month {
+  display: flex;
+  flex-flow: column;
+  width: 350px;
+  height: 350px;
+}
+.pmonth img:hover {
+  width: 260px;
+  height: 260px;
+  opacity: 0.2;
+  position: relative;
+
+}
+.textmonth{
+  font-family: 'Lato', sans-serif;
+  color:white;
+  font-size: 3em;
+  margin: 0;
+}
+.icon {
+  width: 50px;
+  height: 50px;
+  padding: 7px;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
