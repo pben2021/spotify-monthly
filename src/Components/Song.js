@@ -14,7 +14,25 @@ function Song() {
     }
     getMonth()
   }, [])
+  
+  useEffect(() => {
+    (function () {
+      var location = window.document.location;
+  
+      var preventNavigation = function () {
+          var originalPathName = '/';
+  
+          window.setTimeout(function () {
+              location.pathname = 'preventNavigation' + ~~ (9999 * Math.random());
+              location.pathname= originalPathName;
+          }, 0);
+      };
+  
+      window.addEventListener('beforeunload', preventNavigation, false);
+      window.addEventListener('unload', preventNavigation, false);
+    })();
 
+  }, [])
 
   //fetch song per month  
   const fetchMonth = async () => {
