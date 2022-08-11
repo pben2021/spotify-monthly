@@ -38,27 +38,6 @@ function App() {
     }
   }, [jsons])
 
-  //watch for reload to trigger return to 'upload files' page
-  useEffect(() => {
-    (function () {
-      var location = window.document.location;
-  
-      var preventNavigation = function () {
-          var originalPathName = '/';
-  
-          window.setTimeout(function () {
-              location.pathname = 'preventNavigation' + ~~ (9999 * Math.random());
-              location.pathname= originalPathName;
-          }, 0);
-      };
-  
-      window.addEventListener('beforeunload', preventNavigation, false);
-      window.addEventListener('unload', preventNavigation, false);
-    })();
-
-  }, [])
-
-
   async function getJSON(url) {
     const response = await fetch(url);
     if(!response.ok) 

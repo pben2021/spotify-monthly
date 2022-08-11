@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.shortcuts import redirect
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
 from rest_framework import status
@@ -229,3 +230,6 @@ def dec(DATA):
         if serializer.is_valid():
             serializer.save()
 
+@api_view(['GET'])
+def noview(request, month):
+    return redirect(front)
