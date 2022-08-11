@@ -8,5 +8,5 @@ To use:
 3. See your beautiful data!
 
 Some things to note:
--This site displays your top 15 songs per month and bottom 15 (your least listened to tracks. This doesn't include the tracks you streamed once songs per month). If you have less than 40 unique streamed tracks per month, your data may be skewed.
+-This site displays your top 15 songs per month and bottom 15 (your least listened to tracks. This doesn't include the tracks you streamed once songs per month). If you have less than 30 unique streamed tracks per month, your data may be skewed.
 
